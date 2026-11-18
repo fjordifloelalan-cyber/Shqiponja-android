@@ -1,12 +1,25 @@
-# SHQIPONJA — projekt fillestar Android
+# SHQIPONJA — aplikacion Android (prototip)
 
-## Ndërtimi i APK-së nga telefoni
-1. Krijo një repository të ri në GitHub me emrin `shqiponja-android`.
-2. Nxirr (Extract) këtë ZIP në telefon.
-3. Në repository zgjidh **Add file → Upload files** dhe ngarko të gjithë përmbajtjen e projektit, përfshirë `.github/workflows/android.yml`.
-4. Shtyp **Commit changes**.
-5. Hape **Actions**, zgjidh **Build SHQIPONJA APK** dhe prit të përfundojë.
-6. Hape ekzekutimin e përfunduar dhe shkarko artifact-in **SHQIPONJA-debug-apk**. Nxirre ZIP-in për të gjetur `app-debug.apk`.
+Ky është projekti fillestar Android Studio për aplikacionin SHQIPONJA, me pamje kuqezi dhe ndërfaqe në shqip.
 
-## Shënim
-Ky është prototip i ndërfaqes. Mesazhet janë shembuj lokalë; nuk ka ende llogari, SMS, dërgim mesazhesh në internet, telefonata, server ose enkriptim fund-më-fund. Këto duhen ndërtuar e testuar para përdorimit real.
+## Çfarë përfshihet
+- Ekrani kryesor me listën e bisedave shembull
+- Ekran bisede me mesazhe lokale (vetëm në pajisje)
+- Skedat Telefonatat dhe Cilësimet
+- Emri dhe identiteti vizual SHQIPONJA
+
+## E rëndësishme
+Ky version është prototip i ndërfaqes. Mesazhet nuk dërgohen te persona të tjerë dhe nuk ka ende regjistrim, server, njoftime, telefonata reale ose enkriptim. Për këto nevojitet backend, konfigurim i sigurt dhe testim.
+
+## Si të hapet
+1. Instalo Android Studio në kompjuter.
+2. Zgjidh **Open** dhe hap këtë dosje.
+3. Lejo Gradle të shkarkojë varësitë.
+4. Lidhe telefonin Android me USB (me USB debugging aktiv) ose përdor emulator.
+5. Shtyp **Run** për ta provuar.
+
+## Si të krijohet APK
+Në Android Studio: **Build → Build Bundle(s) / APK(s) → Build APK(s)**.
+APK-ja e debug gjendet zakonisht te `app/build/outputs/apk/debug/app-debug.apk`.
+
+Për ta kthyer në aplikacion real, hapi tjetër është të lidhim autentikimin dhe mesazhet me një backend (p.sh. Firebase), të konfigurojmë rregullat e sigurisë dhe të testojmë dërgimin/pritjen në dy telefona.
