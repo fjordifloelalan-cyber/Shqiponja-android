@@ -4,10 +4,10 @@ plugins {
     id("org.jetbrains.kotlin.plugin.compose")
 }
 android {
-    namespace = "com.shqiponja.chat"
+    namespace = "com.shqiponja.app"
     compileSdk = 35
     defaultConfig {
-        applicationId = "com.shqiponja.chat"
+        applicationId = "com.shqiponja.app"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
